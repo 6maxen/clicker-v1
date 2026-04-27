@@ -16,14 +16,14 @@ cookie.addEventListener('click', function(e) {
         cookie.style.transform = 'scale(.9)'
     }, 100)
     if (counter.textContent >= 300) {
-        goalText.textContent = "."
+        goalText.textContent = ">:("
     } else if (counter.textContent >= 255) {
         goalText.textContent = "game's actually over, go away!"
     } else if (counter.textContent >= 251) {
         goalText.textContent = "dang it, you must've double clicked. sorry about that."
     } else if (counter.textContent == 250) {
         counter.textContent = 251
-        goalText.textContent = "dang it, you must've double clicked. Sorry about that."
+        goalText.textContent = "..."
     } else if (counter.textContent >= 150) {
         goalText.textContent = "okay fine, if you hit exactly '250', I'll give you a giftcard for 10$ uber eats."
     } else if (counter.textContent >= 125) {
@@ -33,10 +33,15 @@ cookie.addEventListener('click', function(e) {
     } else if (counter.textContent >= 75) {
         goalText.textContent = "well, I'm going to run some errands, brb."
     } else if (counter.textContent >= 50) {
-        goalText.textContent = "the game's over fyi"
+        goalText.textContent = "game's over dude"
     } else if (counter.textContent >= 33) {
         goalText.textContent = "why are you still clicking?"
     } else if (counter.textContent >= Number(goal.textContent)) {
         goalText.textContent = "congrats!"
     }
+})
+
+
+document.querySelector("header").addEventListener("click", function() {
+    location.reload()
 })
