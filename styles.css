@@ -35,7 +35,7 @@ footer {
     color: rgb(155, 155, 155);
 }
 
-#cookie-wrapper {
+#cuukie-wrapper {
     animation: spin 10s linear infinite;
     margin: 5rem auto;
     width: fit-content;
@@ -45,7 +45,7 @@ footer {
   to { transform: rotate(360deg); }
 }
 
-#cookie {
+#cuukie {
     height: 300px;
     width: 300px;
     border-radius: 46%;

@@ -1,19 +1,19 @@
-let cookie = document.getElementById("cookie")
+let cuukie = document.getElementById("cuukie")
 let counter = document.getElementById("counter")
 let goal = document.getElementById("goal")
 let goalText = document.getElementById("goal-text")
 const clickSound = new Audio('click.mp3')
 
-cookie.addEventListener('click', function(e) {
+cuukie.addEventListener('click', function(e) {
     clickSound.currentTime = 0  // resets so rapid clicks work
     clickSound.play()
     counter.textContent++
     
-    cookie.style.transition = 'transform .1s ease'
-    cookie.style.transform = 'scale(1.02) rotate(0deg)'
+    cuukie.style.transition = 'transform .1s ease'
+    cuukie.style.transform = 'scale(1.02) rotate(0deg)'
     
     setTimeout(() => {
-        cookie.style.transform = 'scale(.9)'
+        cuukie.style.transform = 'scale(.9)'
     }, 100)
     if (counter.textContent >= 300) {
         goalText.textContent = ">:("
