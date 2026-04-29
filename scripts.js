@@ -9,14 +9,14 @@ cuukie.addEventListener('click', function(e) {
     clickSound.play()
     counter.textContent++
     
-    cuukie.style.transition = 'transform .1s ease'
-    cuukie.style.transform = 'scale(1.02) rotate(0deg)'
+    cuukie.style.transition = 'transform .01s ease'
+    cuukie.style.transform = 'scale(1.1) rotate(0deg)'
     
     setTimeout(() => {
-        cuukie.style.transform = 'scale(.9)'
+        cuukie.style.transform = 'scale(1)'
     }, 100)
     if (counter.textContent >= 300) {
-        goalText.textContent = ">:("
+        goalText.style.display = "none"
     } else if (counter.textContent >= 255) {
         goalText.textContent = "game's actually over, go away!"
     } else if (counter.textContent >= 251) {
